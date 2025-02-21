@@ -1,0 +1,33 @@
+.header{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 20px 160px;
+  justify-content: space-between;
+  z-index: 100;
+  background: white;
+  border-bottom: solid 1px gainsboro;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 600;    
+}
+
+.navigation{
+    display: flex;
+    gap: 1rem;
+}
+
+.nav_link{
+    font-size: 1rem;
+    font-weight: 600;    
+    border-bottom: solid 4px transparent;
+    transition: all 0.3s ease-in-out;    
+}
+
+.active{
+    border-bottom: solid 4px #5151d4;
+}

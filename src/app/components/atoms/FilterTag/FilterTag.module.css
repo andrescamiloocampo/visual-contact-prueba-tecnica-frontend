@@ -1,0 +1,27 @@
+.filter_tag_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px gainsboro;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.active_tag{
+    background: #6d6dad;
+    color: white;
+    font-weight: 700; 
+    border: none;
+}
+
+.filter_tag_container:hover{
+    background: gainsboro;    
+    transform: translateY(-3px);
+}
+
+.active_tag:hover{
+    background: #6d6dad;
+    transform: translateY(min-width);
+}

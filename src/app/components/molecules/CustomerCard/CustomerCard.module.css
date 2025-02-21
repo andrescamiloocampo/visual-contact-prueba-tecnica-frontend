@@ -1,0 +1,27 @@
+.customer_card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: solid 1px gainsboro;
+    max-width: 600px;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.customer_card:hover{
+    background: #f0f0f0;
+    transform: translateY(-3px);
+}
+
+.user_pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: gainsboro;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    border-radius: 60px;
+}
