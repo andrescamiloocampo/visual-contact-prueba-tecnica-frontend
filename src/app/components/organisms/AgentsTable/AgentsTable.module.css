@@ -3,12 +3,12 @@
     max-width: 800px;
     margin: auto;
     font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
   }
   
   .table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+    border-collapse: collapse;    
   }
   
   .table th, .table td {
@@ -20,7 +20,7 @@
   .table th {
     background-color: #f4f4f4;
     font-weight: bold;
-  }
+  } 
   
   .badge {
     display: inline-block;
@@ -31,8 +31,8 @@
   }
   
   .available {
-    background-color: #d4edda;
-    color: #155724;
+    background-color: green;
+    color: white;
   }
   
   .unavailable {
@@ -44,6 +44,11 @@
     background-color: #fff3cd;
     color: #856404;
   }
+
+  .onCall {
+    background-color: red;
+    color: white;
+  }
   
   .link {
     color: #007bff;
@@ -54,4 +59,8 @@
   .link:hover {
     text-decoration: underline;
   }
-  
+
+  .equalWidth {
+    width: 25%;
+    text-align: left;
+  }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Header } from "../components/organisms/Header/Header";
 import styles from './dashboardPage.module.css';
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,9 +29,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
+        <Suspense fallback={<div>...</div>}>
         <div className={styles.layout_children}>
             {children}
         </div>
+        </Suspense>
       </body>
     </html>
   );
